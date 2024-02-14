@@ -1,3 +1,4 @@
+//cuet iupc 2024 - problem I - Mexy
 #include <algorithm>
 #include <array>
 #include <bitset>
