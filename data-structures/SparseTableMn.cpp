@@ -22,3 +22,14 @@ struct MnTable {
         return min(mn[l][k], mn[r - (1 << k) + 1][k]);
     }
 };
+
+signed main() {
+    InTheNameofAllah int t;
+    lg[1] = 0;
+    for (int i = 2; i < N; i++) {
+        lg[i] = lg[i - 1];
+        lg[i] += (int)((i & (i - 1)) == 0);
+    }
+    cin >> t;
+    while (t--) solve();
+}
